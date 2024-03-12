@@ -1,0 +1,27 @@
+@media (min-width: 376px) {
+  .AddButton {
+    width: 104px;
+    height: 40px;
+    background: var(--UI-Red, #e4163a);
+    color: white;
+    border-radius: 4px;
+    justify-content: "center";
+    align-items: "center";
+    gap: 8px;
+    cursor: pointer;
+  }
+}
+
+@media (max-width: 375px) {
+  .AddButton {
+    width: 351px;
+    height: 40px;
+    background-color: red;
+    color: white;
+    border-radius: 4px;
+    justify-content: "center";
+    align-items: "center";
+    gap: 8px;
+    cursor: pointer;
+  }
+}

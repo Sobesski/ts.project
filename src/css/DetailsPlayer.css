@@ -1,0 +1,89 @@
+@media (min-width: 376px) {
+  .DetailsPlayer {
+    width: 1440px;
+    height: 1072px;
+  }
+
+  .DetailsPlayer_CardShow {
+    display: flex;
+    background-color: #f6f6f6;
+  }
+  .DetailsPlayer_CardShow_Card {
+    width: 1140px;
+    height: 594px;
+    background-color: gray;
+    border-radius: 10px;
+    margin-top: 32px;
+    margin-left: 80px;
+    overflow: hidden;
+  }
+
+  .DetailsPlayer_CardShow_Card_Nav {
+    display: flex;
+    height: 69px;
+    /* width: 1140px; */
+    background-color: #ffffff;
+    border-radius: 10px;
+  }
+
+  .DetailsPlayer_CardShow_Card_Inf {
+    overflow: hidden;
+    display: flex;
+    /* margin-left: 78px;
+        margin-top:89px; */
+  }
+
+  .DetailsPlayer_CardShow_Card_Inf > img {
+    width: 531px;
+    height: 531px;
+    margin-top: 164px;
+    margin-left: 50px;
+  }
+}
+
+@media (max-width: 375px) {
+  .DetailsPlayer {
+    width: 100%;
+    height: 100%;
+  }
+
+  .DetailsPlayer_CardShow {
+    display: flex;
+    background-color: lightgray;
+  }
+  .DetailsPlayer_CardShow_Card {
+    width: 375px;
+    height: 797px;
+    background-color: gray;
+    /* border-radius: 10px; */
+    overflow: hidden;
+    margin-top: 17px;
+  }
+
+  .DetailsPlayer_CardShow_Card_Nav {
+    display: flex;
+    height: 69px;
+    /* width: 1140px; */
+    background-color: #ffffff;
+    /* border-radius: 10px; */
+  }
+
+  .DetailsPlayer_CardShow_Card_Inf {
+    overflow: hidden;
+    display: flex;
+    margin: "0 auto";
+    /* margin-left: 78px;
+        margin-top:89px; */
+  }
+
+  .DetailsPlayer_CardShow_Card_Inf {
+    overflow: hidden;
+    display: block;
+  }
+
+  .DetailsPlayer_CardShow_Card_Inf > img {
+    height: 112px;
+    width: 143px;
+    margin-top: 50px;
+  }
+}

@@ -1,0 +1,72 @@
+@media (min-width: 376px) {
+  .seePasswordEye {
+    background: #f6f6f6 url("../../public/assets/icons/Frame\ 6.png") no-repeat
+      center center;
+    background-position: 0% 0% 0% 0%;
+    border: 2px solid black;
+    border-radius: 4px;
+    width: 41px;
+    height: 40px;
+    display: inline-block;
+    position: relative;
+    border-left: none;
+    border-radius: 0 4px 4px 0;
+    border-color: #f6f6f6;
+    cursor: pointer;
+  }
+  .seePasswordEye--on {
+    background: #f6f6f6 url("../../public/assets/icons/Frame\ 6\ \(1\).png")
+      no-repeat center center;
+  }
+
+  .logininput_eye {
+    background: #f6f6f6;
+    border-radius: 4px;
+    width: 326px;
+    height: 40px;
+    border-color: #f6f6f6;
+    border-style: none;
+    display: inline-block;
+    position: relative;
+  }
+
+  .input_flex {
+    display: flex;
+  }
+}
+@media (max-width: 375px) {
+  .seePasswordEye {
+    background: #f6f6f6 url("../../public/assets/icons/Frame\ 6.png") no-repeat
+      center center;
+    background-position: 0% 0% 0% 0%;
+    border: 2px solid black;
+    border-radius: 4px;
+    width: 41px;
+    height: 40px;
+    display: inline-block;
+    position: relative;
+    border-left: none;
+    border-radius: 0 4px 4px 0;
+    border-color: #f6f6f6;
+    cursor: pointer;
+  }
+  .logininput_eye {
+    background: #f6f6f6;
+    border-radius: 4px;
+    width: 286px;
+    height: 40px;
+    border-color: #f6f6f6;
+    border-style: none;
+    display: inline-block;
+    position: relative;
+  }
+
+  .seePasswordEye--on {
+    background: #f6f6f6 url("../../public/assets/icons/Frame\ 6\ \(1\).png")
+      no-repeat center center;
+  }
+
+  .input_flex {
+    display: flex;
+  }
+}

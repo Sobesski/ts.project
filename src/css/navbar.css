@@ -1,0 +1,67 @@
+@media (min-width: 376px) {
+  .navbar {
+    width: 1440px;
+    height: 80px;
+    flex-shrink: 0;
+    background: var(--UI-White, #fff);
+    box-shadow: 0px 1px 10px 0px rgba(209, 209, 209, 0.5);
+    display: flex;
+  }
+
+  .navbar_poster {
+    width: 191px;
+    height: 48px;
+    flex-shrink: 0;
+    padding-top: 16px;
+    padding-left: 51px;
+  }
+
+  .navbar_name {
+    height: 80px;
+    margin-left: 1024px;
+    display: flex;
+  }
+
+  .navbar_name_userName {
+    color: var(--UI-Dark-Grey, #303030);
+    font-feature-settings:
+      "clig" off,
+      "liga" off;
+    font-family: Avenir;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    margin-top: 30px;
+  }
+
+  .navbar_name_icon {
+    margin-top: 22px;
+    margin-left: 16px;
+  }
+}
+
+@media (max-width: 375px) {
+  .navbar {
+    width: 375px;
+    height: 62px;
+    flex-shrink: 0;
+    box-shadow: 0px 9px 15px 0px rgba(229, 229, 229, 0.2);
+    display: flex;
+  }
+  .navbar_name_userName {
+    display: none;
+  }
+
+  .navbar_name_icon {
+    display: none;
+  }
+
+  .navbar_poster > img {
+    width: 137px;
+    height: 34px;
+    flex-shrink: 0;
+    margin-left: 83px;
+    margin-top: 14px;
+  }
+}

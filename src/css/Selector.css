@@ -1,0 +1,45 @@
+@media (min-width: 376px) {
+  .selector {
+    width: 88px;
+    height: 40px;
+  }
+
+  .custom-select-wrapper .css-wsp0cs-MultiValueGeneric {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    border-radius: 2px;
+    color: hsl(0, 0%, 20%);
+    font-size: 85%;
+    padding: 3px;
+    padding-left: 6px;
+    box-sizing: border-box;
+  }
+
+  .custom-select-wrapper .css-3w2yfm-ValueContainer {
+    color: white;
+  }
+  .custom-select-wrapper .css-1p3m7a8-multiValue {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    min-width: 0;
+    background-color: hsl(0, 87%, 49%);
+    border-radius: 2px;
+    margin: 2px;
+    box-sizing: border-box;
+    color: white;
+  }
+
+  .custom-select-wrapper .css-wsp0cs-MultiValueGeneric {
+    color: white !important;
+  }
+}
+
+@media (max-width: 375px) {
+  .selector {
+    width: 88px;
+    left: 0;
+  }
+}

@@ -1,0 +1,94 @@
+@media (min-width: 376px) {
+  .pagination {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    background: #f6f6f6;
+    width: 398px;
+    margin-top: 32px;
+    margin-left: 36px;
+  }
+
+  .pagination > div {
+    left: 1272px;
+    position: absolute;
+  }
+
+  .pagination_pagesNumber {
+    /* outline: 1px solid green; */
+    display: flex;
+    width: 398px;
+    height: 40px;
+    /* margin-left: -26.64px; */
+  }
+
+  .pagination_pagesNumber li {
+    list-style: none;
+    font-family: Avenir;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    cursor: pointer;
+    color: gray;
+    text-align: center;
+    margin-left: 32px;
+    height: 40px;
+    width: 40px;
+  }
+
+  .selected {
+    background-color: red;
+    color: black;
+    width: 95px;
+    height: 95px;
+    border-radius: 5px;
+    margin-top: 0px;
+  }
+
+  .pagination_pagesNumber > li > a {
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 375px) {
+  .pagination {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    background: #f6f6f6;
+    margin-top: 32px;
+    margin-left: 0px !important;
+    margin-bottom: 17px;
+  }
+
+  .pagination > div {
+    margin-left: 56px;
+  }
+  .pagination_pagesNumber {
+    display: flex;
+    width: 219px;
+  }
+
+  .pagination_pagesNumber li {
+    list-style: none;
+    font-family: Avenir;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    cursor: pointer;
+    color: gray;
+    text-align: center;
+    margin-left: 29px;
+    height: 28px;
+    width: 28px;
+  }
+
+  .selected {
+    background-color: red;
+    color: black;
+    width: 28px;
+    height: 28px;
+    border-radius: 5px;
+    margin-top: 0px;
+  }
+}

@@ -1,0 +1,172 @@
+@media (min-width: 376px) {
+  .SideBar {
+    height: 992px;
+    width: 140px;
+    background: var(--UI-White, #fff);
+  }
+
+  .SideBarNo {
+    height: 992px;
+    width: 140px;
+    background: var(--UI-White, #fff);
+  }
+  .SideBar_auth {
+    display: none;
+  }
+  .SideBar > hr {
+    display: none;
+  }
+  .SideBar_TeamsIcon {
+    margin-top: 32px;
+    cursor: pointer;
+  }
+  .SideBar_TeamsIcon:hover {
+  }
+  .SideBar_TeamsIcon > img {
+    margin-left: 58px;
+  }
+
+  .SideBar_TeamsIcon > p {
+    margin-left: 51px;
+    margin-top: 4px;
+    width: 38px;
+    font-family: Avenir;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    color: var(--UI-Red, #e4163a);
+  }
+  .SideBar_PlayersIcon {
+    margin-top: 36px;
+    cursor: pointer;
+  }
+  .SideBar_PlayersIcon > img {
+    margin-left: 58px;
+  }
+
+  .SideBar_PlayersIcon > p {
+    margin-left: 51px;
+    margin-top: 4px;
+    width: 38px;
+    font-family: Avenir;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    color: var(--UI-Light-Grey, #9c9c9c);
+  }
+
+  .SideBar_SignOutIcon {
+    margin-top: 754px;
+    margin-left: 58px;
+  }
+  .SideBar_SignOut {
+    display: none;
+  }
+}
+
+@media (max-width: 375px) {
+  .SideBar {
+    width: 201px;
+    height: 815px;
+    flex-shrink: 0;
+    position: absolute;
+    z-index: 10;
+    background: #fff;
+  }
+  /* .NewTeam_Black—Inactive {
+  position: absolute;
+  opacity: 0.6;
+  background: #414141;
+  width: 375px;
+height: 815px;
+flex-shrink: 0;
+} */
+  .SideBarNo {
+    display: none;
+  }
+
+  .SideBar_auth {
+    display: flex;
+  }
+
+  .SideBar_auth > img {
+    width: 48px;
+    height: 48px;
+    flex-shrink: 0;
+    margin-left: 16px;
+    margin-top: 16px;
+  }
+
+  .SideBar_auth > p {
+    margin-left: 8px;
+    margin-top: 28px;
+  }
+
+  .SideBar_TeamsIcon {
+    display: flex;
+  }
+  .SideBar_TeamsIcon > img {
+    margin-left: 20px;
+    margin-top: 24px;
+  }
+
+  .SideBar_TeamsIcon > p {
+    width: 38px;
+    margin-left: 8px;
+    margin-top: 27px;
+    color: var(--UI-Red, #e4163a);
+    font-family: Avenir;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 18px;
+  }
+
+  .SideBar_PlayersIcon {
+    display: flex;
+  }
+  .SideBar_PlayersIcon > img {
+    margin-left: 20px;
+    margin-top: 24px;
+  }
+  .SideBar_PlayersIcon > p {
+    width: 38px;
+    margin-left: 8px;
+    margin-top: 27px;
+    color: var(--UI-Light-Grey, #9c9c9c);
+    font-family: Avenir;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 18px;
+    width: 38px;
+  }
+  .SideBar_SignOutIcon {
+    display: none;
+  }
+  .SideBar_SignOut {
+    display: flex;
+  }
+  .SideBar_SignOut > img:nth-child(2) {
+    color: var(--UI-Lightest-Red, #ff768e);
+    font-family: Avenir;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 18px;
+    width: 49px;
+    height: 18px;
+    margin-top: 594px;
+    margin-left: 8px;
+  }
+
+  .SideBar_SignOut > img:first-child {
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+    margin-left: 20px;
+    margin-top: 591px;
+  }
+}

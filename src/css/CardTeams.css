@@ -1,0 +1,115 @@
+@media (min-width: 376px) {
+  .CardTeams {
+    width: 1440px;
+    height: 1072px;
+  }
+
+  .CardTeams_cards {
+    display: flex;
+    background-color: #f6f6f6;
+  }
+
+  .CardTeams_cards_manage {
+    width: 1300px;
+    display: block;
+  }
+
+  .CardTeams_cards_manage_flex {
+    display: flex;
+  }
+
+  .InputSearch_margin {
+    margin-left: 80px;
+    margin-top: 32px;
+  }
+  .AddButton_margin {
+    margin-left: 669px;
+    margin-top: 32px;
+  }
+  .pagination {
+    display: flex;
+  }
+  .pagination_teams_size {
+    position: "absolute";
+    left: 1272px;
+  }
+  .EmptyHere {
+    width: 1305px;
+    height: 689px;
+  }
+  .EmptyHere_img {
+    width: 556px;
+    height: 570px;
+    margin-top: 139px;
+    margin-left: 372px;
+    background-color: white;
+  }
+  .EmptyHere_img1 {
+    margin-top: 47px;
+    margin-left: 37px;
+    width: 482px;
+    height: 320px;
+  }
+  .EmptyHere_img2 {
+    margin-top: 60px;
+    margin-left: 180px;
+  }
+
+  .EmptyHere_img3 {
+    margin-top: 39px;
+    margin-left: 139px;
+  }
+}
+
+@media (max-width: 375px) {
+  .CardTeams {
+    width: 375px;
+    height: 921px;
+  }
+
+  .CardTeams_cards {
+    display: flex;
+    background-color: #f6f6f6;
+  }
+
+  .CardTeams_cards_manage_flex {
+    display: block;
+  }
+  .InputSearch_margin {
+    margin-left: 15px;
+    margin-top: 20px;
+  }
+  .AddButton_margin {
+    margin-left: 15px;
+    margin-top: 20px;
+  }
+
+  .pagination_teams_size {
+  }
+  .EmptyHere {
+    width: 375px;
+    height: 434px;
+    position: relative;
+  }
+  .EmptyHere_img {
+  }
+  .EmptyHere_img1 {
+    width: 225px;
+    height: 225px;
+    margin-left: 78px;
+    margin-top: 49px;
+  }
+  .EmptyHere_img2 {
+    width: 95px;
+    height: 25px;
+    margin-left: 144px;
+    margin-top: 54px;
+  }
+
+  .EmptyHere_img3 {
+    width: 193px;
+    height: 24px;
+    margin-left: 91px;
+    margin-top: 51px;
+  }
+}

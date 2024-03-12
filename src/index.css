@@ -1,0 +1,35 @@
+@import url("./css/App.css");
+@import url("./css/input.css");
+@import url("./css/signIn.css");
+@import url("./css/input_type.css");
+@import url("./css/button.css");
+@import url("./css/signUp.css");
+@import url("./css/navbar.css");
+@import url("./css/AddNewTeam.css");
+@import url("./css/SideBar.css");
+@import url("./css/Burger.css");
+@import url("./css/CardTeams.css");
+@import url("./css/InputSearch.css");
+@import url("./css/AddButton.css");
+@import url("./css/PagintationStyles.css");
+@import url("./css/СardShow.css");
+@import url("./css/Selector.css");
+@import url("./css/DetailsTeam.css");
+@import url("./css/AddNewPlayer.css");
+@import url("./css/DatePicker.css");
+@import url("./css/CardPlayers.css");
+@import url("./css/DetailsPlayer.css");
+@import url("./css/AddButton.css");
+.body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}

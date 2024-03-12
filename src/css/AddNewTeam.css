@@ -1,0 +1,244 @@
+@media (min-width: 376px) {
+  hr {
+    display: none;
+  }
+  .NewTeam {
+    width: 1440px;
+    height: 1072px;
+    display: block;
+    background: var(--UI-Lightest-Grey1, #f6f6f6);
+  }
+  .NewTeam_field {
+    display: flex;
+    width: 1440px;
+  }
+  .NewTeam_field_add {
+    margin-top: 32px;
+    margin-left: 80px;
+    width: 1140px;
+    height: 655px;
+    flex-shrink: 0;
+    border-radius: 10px 10px 0px 0px;
+    background: var(--UI-White, #fff);
+  }
+
+  .NewTeam_field_add_content {
+    display: flex;
+  }
+
+  .NewTeam_field_add_nav {
+    width: 1140px;
+    height: 69px;
+    flex-shrink: 0;
+    border-radius: 10px 10px 0px 0px;
+    background: var(--UI-White, #fff);
+  }
+  .NewTeam_field_add_nav > p {
+    margin-left: 32px;
+    padding-top: 24px;
+    width: 191px;
+    height: 21px;
+    flex-shrink: 0;
+    color: var(--UI-Red, #e4163a);
+    font-feature-settings:
+      "clig" off,
+      "liga" off;
+    font-family: Avenir;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+  }
+
+  .NewTeam_field_add_nav > p > span {
+    color: var(--UI-Light-Grey, #9c9c9c);
+    font-feature-settings:
+      "clig" off,
+      "liga" off;
+    font-family: Avenir;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+  }
+
+  .NewTeam_field_add_content_inputPhoto {
+    width: 336px;
+    height: 261px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    opacity: 0.5;
+    background: var(--UI-Light-Grey, #9c9c9c);
+    margin-left: 73px;
+    margin-top: 48px;
+  }
+  .NewTeam_field_add_content_inputPhoto > input {
+    display: none;
+  }
+
+  .NewTeam_field_add_content_inputPhoto > img {
+    margin-top: 93px;
+    margin-left: 131px;
+  }
+
+  .NewTeam_field_add_content_inputedPhoto {
+    width: 336px;
+    height: 261px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: var(--UI-Light-Grey, #9c9c9c);
+    margin-left: 73px;
+    margin-top: 48px;
+  }
+
+  .photoTeam {
+    width: 336px;
+    height: 261px;
+    flex-shrink: 0;
+  }
+
+  .NewTeam_field_add_content_inputedPhoto > input {
+    display: none;
+  }
+
+  .camera {
+    display: none;
+  }
+
+  .NewTeam_field_add_content_inputDatas {
+    margin-left: 136px;
+    margin-top: 48px;
+  }
+  .Black—Inactive {
+    display: none;
+  }
+
+  .Black—InactiveOn {
+    display: none;
+  }
+}
+@media (max-width: 375px) {
+  .NewTeam {
+    width: 375px;
+    height: 874px;
+  }
+  .NewTeam_field {
+    display: flex;
+  }
+  .Black—Inactive {
+    display: none;
+  }
+  .Black—InactiveOn {
+    position: absolute;
+    background-color: var(--UI-Lightest-Grey1, #414141);
+    width: 375px;
+    height: 815px;
+    opacity: 0.6;
+    z-index: 5;
+  }
+
+  .NewTeam_field_add {
+    margin-top: 0px;
+    margin-left: 0px;
+  }
+
+  .NewTeam_field_add_nav {
+    margin-top: 16px;
+    margin-left: 16px;
+    width: 203px;
+    height: 16px;
+    flex-shrink: 0;
+  }
+  .NewTeam_field_add_nav > p {
+    width: 203px;
+    height: 16px;
+    flex-shrink: 0;
+    color: var(--UI-Red, #e4163a);
+    font-family: Avenir;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 18px;
+  }
+  .NewTeam_field_add_nav > p > span {
+    color: var(--UI-Light-Grey, #9c9c9c);
+    font-family: Avenir;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 18px;
+  }
+  .NewTeam_field_add_opacity {
+  }
+
+  .NewTeam_field_add_content {
+  }
+
+  .NewTeam_field_add_content_inputPhoto {
+    flex-shrink: 0;
+    border-radius: 10px;
+    opacity: 0.5;
+    background: var(--UI-Light-Grey, #9c9c9c);
+    margin-top: 48px;
+    margin-left: 95px;
+    width: 185px;
+    height: 144px;
+    flex-shrink: 0;
+  }
+  .NewTeam_field_add_content_inputPhoto > input {
+    display: none;
+  }
+  .NewTeam_field_add_content_inputPhoto > img {
+    width: 41px;
+    height: 40px;
+    margin-top: 52px;
+    margin-left: 72px;
+  }
+
+  .NewTeam_field_add_content_inputedPhoto {
+    flex-shrink: 0;
+    flex-shrink: 0;
+    border-radius: 10px;
+    opacity: 0.5;
+    background: var(--UI-Light-Grey, #9c9c9c);
+    margin-top: 48px;
+    margin-left: 95px;
+    width: 185px;
+    height: 144px;
+    flex-shrink: 0;
+  }
+  .NewTeam_field_add_content_inputedPhoto > input {
+    display: none;
+  }
+  .camera {
+    position: absolute;
+    width: 41px;
+    height: 40px;
+    flex-shrink: 0;
+    z-index: 11;
+    margin-top: 52px;
+    margin-left: 72px;
+  }
+
+  .photoTeam {
+    width: 185px;
+    height: 144px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    opacity: 0.5;
+    background: var(--UI-Light-Grey, #9c9c9c);
+    z-index: 9;
+    position: absolute;
+  }
+  .NewTeam_field_add_content_inputDatas {
+    /* position: fixed; */
+    z-index: 1;
+    margin-left: 24px;
+    margin-top: 48px;
+    /* opacity: 0.6px; */
+  }
+
+  .NewTeam_field_add_content_inputDatas_buttons {
+    display: flex;
+  }
+}

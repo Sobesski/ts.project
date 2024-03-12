@@ -1,0 +1,51 @@
+@media (min-width: 376px) {
+  .InputSearch {
+    border: 0.5px solid #ccc;
+    display: inline-block;
+    width: 364px;
+    height: 40px;
+    background-color: white;
+    font-family: "Avenir";
+    word-wrap: "break-word";
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  .InputSearch > input {
+    width: 334px;
+    height: 40px;
+    outline: none;
+    border: none;
+  }
+
+  .InputSearch > img {
+    width: 16px;
+    height: 16px;
+  }
+}
+
+@media (max-width: 375px) {
+  .InputSearch {
+    border: 0.5px solid #ccc;
+    display: inline-block;
+    width: 351px;
+    height: 40px;
+    background-color: white;
+    font-family: "Avenir";
+    word-wrap: "break-word";
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  .InputSearch > input {
+    width: 334px;
+    height: 40px;
+    outline: none;
+    border: none;
+  }
+
+  .InputSearch > img {
+    width: 17px;
+    height: 16px;
+  }
+}

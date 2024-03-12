@@ -1,0 +1,16 @@
+@media (min-width: 376px) {
+  .Burger {
+    display: none;
+  }
+
+  .Burger_hamburger_button {
+    display: none;
+  }
+}
+@media (max-width: 375px) {
+  .Burger_hamburger_button {
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+  }
+}

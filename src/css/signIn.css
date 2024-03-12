@@ -1,0 +1,230 @@
+@media (min-width: 376px) {
+  .SignIn {
+    width: 1440px;
+    height: 1024px;
+    display: flex;
+  }
+
+  .autorisation {
+    width: 606px;
+    height: 1024px;
+  }
+
+  .SignIn_poster {
+    width: 834px;
+    height: 1024px;
+    background-color: #f5fbff;
+  }
+  .autorisation_error {
+    color: var(--UI-Lightest-Red, #ff768e);
+    font-feature-settings:
+      "clig" off,
+      "liga" off;
+    font-family: Avenir;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+  }
+  .SignIn_poster_error {
+    width: 470px;
+    height: 40px;
+    flex-shrink: 0;
+    flex-direction: column;
+    justify-content: flex-end;
+    flex-shrink: 0;
+    color: var(--UI-White, #fff);
+    font-feature-settings:
+      "clig" off,
+      "liga" off;
+    font-family: Avenir;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    border-radius: 4px;
+    background: var(--UI-Light-Red, #ff5761);
+    text-align: center;
+    margin-top: 44px;
+    margin-left: 344px;
+    position: absolute;
+  }
+
+  .SignIn_poster_error > p {
+    padding-top: 8px;
+    padding-left: 16px;
+    line-height: 24px;
+  }
+
+  .posterimg {
+    padding-top: 306px;
+    padding-left: 114px;
+  }
+
+  .autorisation_title {
+    width: 130px;
+    height: 50px;
+    color: var(--UI-Blue, #344472);
+    font-family: Avenir;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-top: 340px;
+    padding-left: 120px;
+  }
+  .autorisation_error {
+    color: var(--UI-Lightest-Red, #ff768e);
+    font-feature-settings:
+      "clig" off,
+      "liga" off;
+    font-family: Avenir;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    position: absolute;
+  }
+
+  .autorisation_titleButton1 {
+    padding-left: 120px;
+    padding-top: 32px;
+  }
+
+  .autorisation_titleButton2 {
+    padding-left: 120px;
+    padding-top: 26px;
+  }
+
+  .autorisation_titleButton3 {
+    padding-left: 120px;
+    padding-top: 26px;
+  }
+
+  .signin {
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+    color: var(--UI-Grey, #707070);
+    font-feature-settings:
+      "clig" off,
+      "liga" off;
+
+    font-family: Avenir;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px; /* 171.429% */
+    padding-left: 215px;
+    padding-top: 24px;
+  }
+
+  .signin_flex {
+    display: flex;
+  }
+
+  .signup_redirect {
+    color: var(--UI-Red, #e4163a);
+    font-feature-settings:
+      "clig" off,
+      "liga" off;
+    font-family: Avenir;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    text-decoration-line: underline;
+    padding-top: 24px;
+  }
+}
+
+@media (max-width: 376px) {
+  .SignIn {
+    width: 375px;
+    height: 667px;
+    background: #fff;
+  }
+  .autorisation {
+    width: 375px;
+    height: 667px;
+  }
+
+  .SignIn_poster {
+    display: none;
+  }
+
+  .autorisation_title {
+    width: 130px;
+    color: var(--UI-Blue, #344472);
+    font-family: Avenir;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-top: 159px;
+    padding-left: 123px;
+  }
+
+  .autorisation_titleButton1 {
+    padding-left: 24px;
+    padding-top: 32px;
+  }
+
+  .autorisation_titleButton2 {
+    padding-left: 24px;
+    padding-top: 26px;
+  }
+
+  .autorisation_titleButton3 {
+    padding-left: 24px;
+    padding-top: 38px;
+  }
+
+  .signin {
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+    color: var(--UI-Grey, #707070);
+    font-feature-settings:
+      "clig" off,
+      "liga" off;
+
+    font-family: Avenir;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px; /* 171.429% */
+    padding-left: 93px;
+    padding-top: 24px;
+  }
+
+  .signin_flex {
+    display: flex;
+  }
+
+  .signup_redirect {
+    color: var(--UI-Red, #e4163a);
+    font-feature-settings:
+      "clig" off,
+      "liga" off;
+    font-family: Avenir;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    text-decoration-line: underline;
+    padding-top: 24px;
+  }
+  .autorisation_error {
+    color: var(--UI-Lightest-Red, #ff768e);
+    font-feature-settings:
+      "clig" off,
+      "liga" off;
+    font-family: Avenir;
+    font-style: normal;
+    font-weight: 500;
+    position: absolute;
+    line-height: 24px;
+    width: 291px;
+    height: 24px;
+  }
+}

@@ -1,0 +1,28 @@
+.DatePicker {
+  all: unset;
+  width: 172px;
+  height: 40px;
+  background-color: #f6f6f6;
+  padding: 0 0 0 0;
+}
+
+.react-datepicker__input-container .react-datepicker__calendar-icon {
+  margin-left: 140px;
+  margin-top: 3px;
+}
+
+.react-datepicker__view-calendar-icon input {
+  all: unset;
+  margin-top: 11px;
+  margin-left: 5px;
+}
+
+.react-datepicker__input-container {
+  width: 172px !important;
+  height: 40px;
+  background-color: #f6f6f6;
+}
+
+.react-datepicker__view-calendar-icon input {
+  padding: 0 0 0 0 !important;
+}

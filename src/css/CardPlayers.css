@@ -1,0 +1,38 @@
+@media (min-width: 376px) {
+  .PlayerTeams {
+    width: 1440px;
+    height: 1072px;
+  }
+  .PlayerTeams_cards {
+    display: flex;
+    background-color: #f6f6f6;
+  }
+
+  .PlayerTeams_cards_manage {
+    width: 1300px;
+    display: block;
+  }
+
+  .PlayerTeams_cards_manage > div {
+    display: flex;
+  }
+}
+
+@media (max-width: 375px) {
+  .PlayerTeams {
+    width: 375px;
+    height: 100%;
+  }
+  .PlayerTeams_cards {
+    display: flex;
+    background-color: #f6f6f6;
+  }
+
+  .PlayerTeams_cards_manage {
+    display: block;
+  }
+
+  .PlayerTeams_cards_manage > div {
+    /* display: block; */
+  }
+}

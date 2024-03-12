@@ -1,0 +1,50 @@
+@media (min-width: 376px) {
+  .button {
+    border-radius: 4px;
+    background: var(--UI-Red, #e4163a);
+    width: 365px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    color: var(--UI-White, #fff);
+    text-align: center;
+    font-feature-settings:
+      "clig" off,
+      "liga" off;
+    font-family: Avenir;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+  }
+
+  .button:active {
+    background: var(--UI-Red, #e4163a);
+  }
+}
+@media (max-width: 376px) {
+  .button {
+    border-radius: 4px;
+    background: var(--UI-Lightest-Grey1, #e4163a);
+    width: 327px;
+    height: 40px;
+    flex-shrink: 0;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    color: var(--UI-White, #fff);
+    text-align: center;
+    font-feature-settings:
+      "clig" off,
+      "liga" off;
+    font-family: Avenir;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+  }
+  .button:active {
+    background: var(--UI-Red, #e4163a);
+  }
+}

@@ -1,0 +1,256 @@
+@media (min-width: 376px) {
+  .SignUp {
+    width: 1440px;
+    height: 1024px;
+    display: flex;
+  }
+
+  .registration {
+    width: 606px;
+    height: 1024px;
+  }
+  .registration_form {
+    padding-top: 226px;
+    padding-left: 120px;
+  }
+  .registration_title {
+    width: 156px;
+    height: 50px;
+    flex-shrink: 0;
+    color: var(--UI-Blue, #344472);
+    font-family: Avenir;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  .registration_input1 {
+    margin-top: 32px;
+  }
+  .registration_input_error {
+    flex-shrink: 0;
+    color: var(--UI-Lightest-Red, #ff768e);
+    font-feature-settings:
+      "clig" off,
+      "liga" off;
+    font-family: Avenir;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    margin-top: 2px;
+    position: absolute;
+  }
+  .registration_input2 {
+    margin-top: 26px;
+  }
+  .registration_input_eye1 {
+    margin-top: 26px;
+  }
+  .registration_input_eye2 {
+    margin-top: 26px;
+  }
+
+  .registration_button {
+    margin-top: 26px;
+  }
+  .registration_flex {
+    display: flex;
+  }
+
+  .registration_checkbox {
+    flex-shrink: 0;
+    box-sizing: initial;
+    margin: 26px 0px 0px 0px;
+  }
+
+  .registration_accept {
+    width: 189px;
+    color: var(--UI-Grey, #707070);
+    font-feature-settings:
+      "clig" off,
+      "liga" off;
+    font-family: Avenir;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    margin-top: 28px;
+    margin-left: 8px;
+  }
+
+  .signup_flex {
+    display: flex;
+    margin-left: 91px;
+    margin-top: 24px;
+  }
+
+  .signup {
+    color: var(--UI-Grey, #707070);
+    text-align: center;
+    font-feature-settings:
+      "clig" off,
+      "liga" off;
+    font-family: Avenir;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+  }
+
+  .signin_redirect {
+    color: var(--UI-Red, #e4163a);
+    font-feature-settings:
+      "clig" off,
+      "liga" off;
+    font-family: Avenir;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    text-decoration-line: underline;
+  }
+
+  .SignUp_Poster {
+    width: 834px;
+    height: 1024px;
+    background: #f5fbff;
+  }
+
+  .SignUp_Poster_img {
+    padding-left: 87px;
+    padding-top: 305px;
+  }
+}
+
+@media (max-width: 376px) {
+  .SignUp {
+    width: 375px;
+    height: 750px;
+    display: flex;
+  }
+
+  .registration {
+    width: 375px;
+    height: 750px;
+  }
+  .registration_form {
+    padding-top: 69px;
+  }
+  .registration_title {
+    width: 156px;
+    height: 50px;
+    flex-shrink: 0;
+    color: var(--UI-Blue, #344472);
+    font-family: Avenir;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-left: 115px;
+  }
+
+  .registration_input1 {
+    margin-top: 32px;
+    margin-left: 24px;
+  }
+
+  .registration_input2 {
+    margin-top: 26px;
+    margin-left: 24px;
+  }
+  .registration_input_eye1 {
+    margin-top: 26px;
+    margin-left: 24px;
+  }
+  .registration_input_eye2 {
+    margin-top: 26px;
+    margin-left: 24px;
+  }
+  .registration_input_error {
+    flex-shrink: 0;
+    color: var(--UI-Lightest-Red, #ff768e);
+    font-feature-settings:
+      "clig" off,
+      "liga" off;
+    font-family: Avenir;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    margin-top: 2px;
+    position: absolute;
+    height: 24px;
+    width: 291px;
+  }
+  .registration_flex {
+    display: flex;
+  }
+
+  .registration_checkbox {
+    flex-shrink: 0;
+    margin: 26px 0px 0px 24px;
+    box-sizing: initial;
+  }
+
+  .registration_accept {
+    width: 189px;
+    color: var(--UI-Grey, #707070);
+    font-feature-settings:
+      "clig" off,
+      "liga" off;
+    font-family: Avenir;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    margin-top: 26px;
+    margin-left: 8px;
+  }
+
+  .registration_button {
+    margin-top: 26px;
+    margin-left: 24px;
+  }
+
+  .signup_flex {
+    display: flex;
+    margin-left: 91px;
+    margin-top: 24px;
+  }
+
+  .signup {
+    color: var(--UI-Grey, #707070);
+    text-align: center;
+    font-feature-settings:
+      "clig" off,
+      "liga" off;
+    font-family: Avenir;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+  }
+
+  .signin_redirect {
+    color: var(--UI-Red, #e4163a);
+    font-feature-settings:
+      "clig" off,
+      "liga" off;
+    font-family: Avenir;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    text-decoration-line: underline;
+  }
+
+  .SignUp_Poster {
+    display: none;
+  }
+
+  .SignIp_Poster_img {
+    display: none;
+  }
+}

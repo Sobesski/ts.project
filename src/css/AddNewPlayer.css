@@ -1,0 +1,61 @@
+@media (min-width: 376px) {
+  .AddNewPlayer {
+  }
+
+  .AddNewPlayer_field {
+    display: flex;
+    background: var(--UI-Lightest-Grey1, #f6f6f6);
+  }
+
+  .AddNewPlayer_field_add {
+    margin-top: 30px;
+    margin-left: 80px;
+    background: white;
+    width: 1140px;
+    height: 655px;
+  }
+
+  .AddNewPlayer_field_add_nav > p {
+    margin-left: 32px;
+    padding-top: 24px;
+    width: 191px;
+    height: 21px;
+    flex-shrink: 0;
+    color: var(--UI-Red, #e4163a);
+    font-feature-settings:
+      "clig" off,
+      "liga" off;
+    font-family: Avenir;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+  }
+
+  .NewTeam_field_add_content_inputDatas_buttons {
+    /* margin-top: 24px; */
+    display: flex;
+  }
+
+  .NewTeam_field_add_content_inputDatas {
+  }
+}
+
+@media (max-width: 375px) {
+  .AddNewPlayer_field_add_nav > p {
+    margin-left: 16px;
+    padding-top: 22px;
+    width: 191px;
+    height: 21px;
+    flex-shrink: 0;
+    color: var(--UI-Red, #e4163a);
+    font-feature-settings:
+      "clig" off,
+      "liga" off;
+    font-family: Avenir;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+  }
+}
