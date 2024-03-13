@@ -24,7 +24,6 @@ const DetailsTeam = () => {
       .delete(id.id)
       .then((response: any) => {
         if (response.status === 500) {
-          alert("A team containing players cannot be deleted");
           throw new Error(
             `Failed to delete player: ${response.status} ${response.statusText}`
           );
@@ -36,7 +35,7 @@ const DetailsTeam = () => {
       .catch((error: any) => {
         if (error.response && error.response.status === 500) {
           alert(
-            `Team can not be deleted now ${error.response.status} ${error.response.statusText}`
+            `Teams containing players cannot be deleted`
           );
         } else {
           console.error("Unknown error occured", error);

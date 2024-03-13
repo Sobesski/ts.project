@@ -35,18 +35,21 @@ const CardPlayers = () => {
       marginBottom: "30px",
       top: "unset",
       bottom: "calc(100% + 8px)",
+      cursor: "pointer",
     }),
     multiValueLabel: (provided: CSSProperties) => ({
       ...provided,
       color: "white",
       backgroundColor: "red",
       borderRadius: "20px",
+      cursor: "pointer",
     }),
     option: (provided: CSSProperties, state: OptionProps<any>) => ({
       ...provided,
       borderBottom: "0.5px solid gray",
       color: "gray",
       backgroundColor: state.isSelected ? "red" : "white",
+      cursor: "pointer",
     }),
   };
 
@@ -187,18 +190,29 @@ const CardPlayers = () => {
                 position: "relative",
               }}
               styles={{
-              multiValueLabel: (provided: CSSProperties) => ({
-                ...provided,
-                color: "white",
-                backgroundColor: "red",
-                borderRadius: "20px",
-              }),
-              option: (provided: CSSProperties, state: OptionProps<any>) => ({
-                ...provided,
-                borderBottom: "0.5px solid gray",
-                color: "gray",
-                backgroundColor: state.isSelected ? "red" : "white",
-              }),}}
+                multiValueLabel: (provided: CSSProperties) => ({
+                  ...provided,
+                  cursor: "pointer",
+                  color: "white",
+                  backgroundColor: "red",
+                  borderTopLeftRadius: "5px",
+                  borderBottomLeftRadius: "5px",
+                }),
+                multiValueRemove: (provided: CSSProperties) => ({
+                  ...provided,
+                  cursor: "pointer",
+                  backgroundColor: "red",
+                  color: "white",
+                  borderTopRightRadius: "5px",
+                  borderBottomRightRadius: "5px",
+                }),
+                option: (provided: CSSProperties, state: OptionProps<any>) => ({
+                  ...provided,
+                  borderBottom: "0.5px solid gray",
+                  color: "gray",
+                  backgroundColor: state.isSelected ? "red" : "white",
+                }),
+              }}
               options={teams}
               onChange={handleChange}
               multiple={true}
