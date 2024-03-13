@@ -186,6 +186,19 @@ const CardPlayers = () => {
                 left: 0,
                 position: "relative",
               }}
+              styles={{
+              multiValueLabel: (provided: CSSProperties) => ({
+                ...provided,
+                color: "white",
+                backgroundColor: "red",
+                borderRadius: "20px",
+              }),
+              option: (provided: CSSProperties, state: OptionProps<any>) => ({
+                ...provided,
+                borderBottom: "0.5px solid gray",
+                color: "gray",
+                backgroundColor: state.isSelected ? "red" : "white",
+              }),}}
               options={teams}
               onChange={handleChange}
               multiple={true}

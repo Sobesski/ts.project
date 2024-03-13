@@ -24,11 +24,12 @@ const DetailsTeam = () => {
       .delete(id.id)
       .then((response: any) => {
         if (response.status === 500) {
+          alert("A team containing players cannot be deleted");
           throw new Error(
             `Failed to delete player: ${response.status} ${response.statusText}`
           );
         }
-        alert('Team can not be deleted now')
+
         console.log(response);
         navigate("/CardTeams");
       })
@@ -46,7 +47,7 @@ const DetailsTeam = () => {
     Api.team.getTeam(id).then((r) => {
       console.log(r);
       setTeam(r.data);
-    });
+    }).catch((e) => console.log(e));
   };
   useEffect(() => {
     const handleResize = () => {
@@ -59,6 +60,7 @@ const DetailsTeam = () => {
     };
   }, []);
   useEffect(() => {
+    id.id &&
     setTeamIds(id.id);
     console.log(getTeam(id));
     Api.player
@@ -71,7 +73,7 @@ const DetailsTeam = () => {
       .then((r) => {
         console.log(r);
         setPlayers(r.data.data);
-      });
+      }).catch((e) => console.log(e));
   }, []);
   return (
     <div className="DetailsTeam">

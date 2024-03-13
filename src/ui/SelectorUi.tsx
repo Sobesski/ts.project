@@ -2,18 +2,6 @@ import Select from 'react-select'
 import React from 'react';
 import { GroupBase } from 'react-select';
 import { StylesConfig } from 'react-select';
-// label,  onInput, value, multiple, options
-// interface selectorProps {
-//   options:(number | GroupBase<number>)[]
-//   style?: React.CSSProperties
-//   p?:React.CSSProperties
-//   onChange:() => void;
-//   multiple:any;
-//   value:number;
-//   controlShouldRenderValue:Boolean;
-//   styles:StylesConfig<number, any, GroupBase<number> > | string
-//   label:string;
-// }
 const SelectorUi =  (props:any) => {
   
  return (
@@ -24,13 +12,6 @@ const SelectorUi =  (props:any) => {
     </div>
     )
 };
-
-// Select.defaultProps = {
-//   label: '',
-//   options: [],
-//   multiple: false,
-//   // value:''
-// }
 
 
 export default SelectorUi
