@@ -1,4 +1,4 @@
-import React, { ChangeEvent, useState } from "react";
+import React, { ChangeEvent, useState, useMemo } from "react";
 import store from "../core/store";
 import Navbar from "../ui/navbar";
 import SideBar from "../ui/SideBar";
@@ -15,8 +15,8 @@ import { useEffect } from "react";
 import { useParams } from "react-router-dom";
 const AddNewPlayer: React.FC = () => {
   interface Option {
-    value?: string | number; 
-    label?: string; 
+    value?: string | number;
+    label?: string;
   }
   type FormData = {
     name: string;
@@ -53,13 +53,13 @@ const AddNewPlayer: React.FC = () => {
     };
   };
 
-  interface position  {
+  interface position {
     value: string | number;
     label: string | number;
-  };
+  }
   type positions = [string];
   const selectStyle: StylesConfig = {
-    menu: (provided, state) => ({
+    menu: (provided) => ({
       ...provided,
       marginBottom: "unset",
       bottom: "unset",
@@ -101,20 +101,20 @@ const AddNewPlayer: React.FC = () => {
     value: inputValue.position,
     label: inputValue.position,
   });
-  const [selectedTeams, setSelectedTeams] = useState<any>({
-    value: inputValue.name && inputValue.name,
-    label: inputValue.teamName && inputValue.teamName,
+  const [selectedTeam, setSelectedTeam] = useState<any>({
+    value: inputValue.teamName,
+    label: inputValue.teamName,
   });
 
   const handleChange = (selected: Selected, f: any) => {
     selected && f(selected);
-    if (f === setSelectedTeams) {
-      setSelectedTeams(selected);
+    if (f === setSelectedTeam) {
+      setSelectedTeam(selected);
     } else if (f === setSelectedPosition) {
       setSelectedPosition(selected);
     }
   };
- 
+
   const sendPhoto = (e: ChangeEvent<HTMLInputElement>) => {
     return new Promise((resolve, reject) => {
       const files = e.target.files;
@@ -139,16 +139,16 @@ const AddNewPlayer: React.FC = () => {
                 ...prevInputPlayer,
                 avatarUrl: response.data,
               }));
-              resolve(response.data); 
+              resolve(response.data);
             })
             .catch((error) => {
               console.error(error);
-              reject(error); 
+              reject(error);
             });
         }
       } else {
         console.log("Файл не выбран");
-        reject(new Error("Файл не выбран")); 
+        reject(new Error("Файл не выбран"));
       }
     });
   };
@@ -165,12 +165,13 @@ const AddNewPlayer: React.FC = () => {
     };
   }, []);
   useEffect(() => {
-    try {
-      id.id &&
-        Api.player.get(id.id).then((player: Player) => {
+    id.id &&
+      Api.player
+        .get(id.id)
+        .then((player: Player) => {
           console.log(player.data);
           if (player.data) {
-            setSelectedTeams({
+            setSelectedTeam({
               value: player.data.team,
               label: player.data.teamName,
             });
@@ -181,45 +182,43 @@ const AddNewPlayer: React.FC = () => {
             setPlayer(player.data);
             setInputValue(player.data);
           }
+        })
+        .catch((e) => {
+          console.log(e);
         });
-    } catch (e) {
-      console.log(e);
-    }
-    try {
-      Api.player.getPositions().then((r) => {
+
+    Api.player
+      .getPositions()
+      .then((r) => {
+        console.log(r);
         setPositions(
           r.data.map((e: positions) => {
             return { value: e, label: e };
           })
         );
+      })
+      .catch((error) => {
+        console.error(error);
       });
-    } catch (error) {
-      console.log(error);
-    }
-    try {
-      Api.team
-        .getTeams({ name: "", page: "1", pageSize: "10000" })
-        .then((r: any) => {
-          console.log(r);
-          setTeams(
-            r.data.data.map((e: any) => {
-              return { value: e.id, label: e.name };
-            })
-          );
-          const filteredTeams = r.data.data.filter(
-            (e: any) => e.id === player1.team
-          );
-          console.log(player1);
-          console.log(filteredTeams);
-          const mapTeam = filteredTeams.map((e: any) => ({
-            value: e.id,
-            label: e.name,
-          }));
-          id.id && setSelectedTeams(mapTeam);
-        });
-    } catch (error) {
-      console.log(error);
-    }
+
+    Api.team
+      .getTeams({ name: "", page: "1", pageSize: "10000" })
+      .then((r: any) => {
+        console.log(r);
+        setTeams(
+          r.data.data.map((e: any) => {
+            return { value: e.id, label: e.name };
+          })
+        );
+        const filteredTeams = r.data.data.filter(
+          (e: any) => e.id === player1.team
+        );
+        console.log(player1);
+        console.log(filteredTeams);
+      })
+      .catch((error) => {
+        console.error(error);
+      });
   }, []);
   const {
     register,
@@ -257,7 +256,7 @@ const AddNewPlayer: React.FC = () => {
         <form className="AddNewPlayer_field_add" onSubmit={onSubmit}>
           <div className="AddNewPlayer_field_add_nav">
             <p>
-              Players&nbsp;<span>/</span>&nbsp;Add new player
+              Player&nbsp;<span>/</span>&nbsp;Add new player
             </p>
           </div>
           <div className="NewTeam_field_add_content">
@@ -324,9 +323,9 @@ const AddNewPlayer: React.FC = () => {
                   }}
                   label="Team"
                   options={teams}
-                  value={selectedTeams}
+                  value={selectedTeam}
                   onChange={(selected: any) => {
-                    handleChange(selected, setSelectedTeams);
+                    handleChange(selected, setSelectedTeam);
                     setValue("team", selected.value);
                     setValue("teamName", selected.label);
                     setInputValue((prevInputValue: any) => ({
