@@ -242,6 +242,11 @@ const AddNewTeam: React.FC = () => {
                 <Button
                   style={customStyles.cancel}
                   label="Cancel"
+                  onKeyDown={(event: any) => {
+                    if (event.keyCode === 13) {
+                      event.preventDefault();
+                    }
+                  }}
                   onClick={() => {
                     navigate("/CardTeams");
                   }}

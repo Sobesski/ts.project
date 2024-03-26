@@ -6,6 +6,7 @@ type label = {
   style?: any;
   onClick?: any;
   type?: any;
+  onKeyDown?:any;
 };
 
 function Button(props: label) {
@@ -14,6 +15,7 @@ function Button(props: label) {
       className="button"
       type={props.type}
       onClick={props.onClick}
+      onKeyDown={props.onKeyDown}
       style={props.style}
     >
       {props.label}
