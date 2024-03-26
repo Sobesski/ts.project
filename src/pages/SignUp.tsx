@@ -64,7 +64,7 @@ const SignUp: React.FC = () => {
       const token = r.token;
       console.log(token);
       const name: string = r.name;
-      localStorage.auth = JSON.stringify(r.data);
+      localStorage.auth = JSON.stringify({ token: r.token, name: r.name });
       console.log(localStorage.auth);
       store.dispatch({
         type: "auth/loaded",
