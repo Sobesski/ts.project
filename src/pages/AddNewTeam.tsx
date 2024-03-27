@@ -242,6 +242,7 @@ const AddNewTeam: React.FC = () => {
                 <Button
                   style={customStyles.cancel}
                   label="Cancel"
+                  type='button'
                   onKeyDown={(event: any) => {
                     if (event.keyCode === 13) {
                       event.preventDefault();

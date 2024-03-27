@@ -424,6 +424,7 @@ const AddNewPlayer: React.FC = () => {
                     width: windowWidth < 376 ? "152px" : "172px",
                   }}
                   label="Cancel"
+                  type='button'
                   onKeyDown={(event: any) => {
                     if (event.keyCode === 13) {
                       event.preventDefault();
